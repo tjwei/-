@@ -1,7 +1,7 @@
 // 課程地圖
 digraph {
-	graph [autosize=true bb="0,0,54,108" rankdir=LR ratio=compress resolution=100 size="25.7,8.3!"]
-	node [fontname="Noto Sans CJK TC"]
+	graph [bb="0,0,187,207" rankdir=LR ratio=compress resolution=50]
+	node [fontname="Noto Sans CJK TC" pin=true rank=source]
 		"線性代數(二)" [label=<
     線性代數(二) <BR /> <FONT POINT-SIZE='12' color='#aaaaaa'>🏗</FONT>> fillcolor="#ffeeff" shape=box style=filled]
 		"數理統計學(二)" [label=<
@@ -92,6 +92,9 @@ digraph {
     統計學 <BR /> <FONT POINT-SIZE='12' color='#7f5500'>🔬</FONT> <FONT POINT-SIZE='12' color='black'>💕</FONT> <FONT POINT-SIZE='12' color='green'>💻</FONT>> fillcolor="#ffeeff" shape=box style="filled, rounded"]
 		"程式設計(一)" [label=<
     程式設計(一) <BR /> <FONT POINT-SIZE='12' color='#aaaaaa'>🏗</FONT> <FONT POINT-SIZE='12' color='#7f5500'>🔬</FONT> <FONT POINT-SIZE='12' color='blue'>📊</FONT>> fillcolor="#ffeeee" shape=box style="filled, rounded"]
+		"圖例" [label=< <TABLE>
+    <TR><TD><FONT POINT-SIZE='12' color='#aaaaaa'>🏗</FONT></TD><TD>基礎</TD></TR><TR><TD><FONT POINT-SIZE='12' color='black'>💕</FONT></TD><TD>數科組核心二</TD></TR><TR><TD><FONT POINT-SIZE='12' color='#7f5500'>🔬</FONT></TD><TD>數學科學</TD></TR><TR><TD><FONT POINT-SIZE='12' color='red'>π</FONT></TD><TD>數學</TD></TR><TR><TD><FONT POINT-SIZE='12' color='grey'>💙</FONT></TD><TD>數科組核心一</TD></TR><TR><TD><FONT POINT-SIZE='12' color='blue'>📊</FONT></TD><TD>統計資料分析</TD></TR><TR><TD><FONT POINT-SIZE='12' color='green'>💻</FONT></TD><TD>資訊計算</TD></TR> </TABLE>> margin=none pin=true pos="100,100!" shape=plaintext]
+			"演算法" -> "圖例" [style=invis]
 			"線性代數(一)" -> "線性代數(二)" [color="#007f00"]
 			"數理統計學(一)" -> "數理統計學(二)" [color="#007f00"]
 			"基礎機率" -> "機率論" [color="#007f00"]
